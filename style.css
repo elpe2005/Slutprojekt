@@ -40,6 +40,6 @@ footer{
     grid-area:footer;
 }
 .bild1{
-    display:none;
+    display:block;
     width: 25em;
 }
