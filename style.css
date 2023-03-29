@@ -20,16 +20,20 @@ nav>ul{
     padding: 0;
     margin: 0;
     height: 100%;
+    text-align: right;
+    
 }
 nav li{
     height: 100%;
     list-style-type: none;
+    text-align: right;
 }
 nav a{
     height:100%;
     width:100%;
     display:inline-block;
     text-decoration: none;
+    text-align: right;
 }
 main{
     grid-area:main;
@@ -42,4 +46,39 @@ footer{
 .bild1{
     display:block;
     width: 25em;
+}
+@media screen and (min-width:800px){
+    body{
+        height:95vh;
+    }
+}
+.wrapper{
+    grid-template-rows: 50px 50px auto 30px;
+    width:90%;
+    height: 95%;
+    margin: 0 auto;
+}
+nav>ul{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+main{
+    grid-template-columns: 1fr 2fr;
+}
+main section:nth-child(2){
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+}
+form{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+h1{
+    font-size: 3em;
+}
+h2{
+
+}
+h3{
+    font-size: 3em;
+
 }
