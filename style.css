@@ -21,12 +21,12 @@ nav>ul{
     margin: 0;
     height: 100%;
     float:right;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 nav li{
     height: 100%;
     list-style-type:none;
     text-align: right;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 nav a{
     height:100%;
@@ -55,12 +55,22 @@ main section:nth-child(2){
     display:grid;
     grid-template-columns: 1fr 2fr;
 }
+section{
+    align-items: left;
+}
 footer{
     grid-area:footer;
 }
 .bild1{
     display:block;
     width: 25em;
+}
+.friidrott{
+    width: 25em;
+}
+.idrottshall{
+    width: 40em
+    
 }
 @media screen and (min-width:800px){
     body{
@@ -73,20 +83,25 @@ footer{
     height: 95%;
     margin: 0 auto;
 }
-nav>ul{
-    grid-template-columns: 1fr 1fr 1fr;
-}
 form{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: 500;
+}
+.formulär.html{
+    background-colour: ;
 }
 h1{
     font-size: 3em;
 }
 h2{
-
+    font-size: 3em;
 }
 h3{
     font-size: 3em;
-
+}
+h4{
+    font-size: 3em;
+}
+h5{
+    font-size: 3em;
 }
