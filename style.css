@@ -1,27 +1,33 @@
-.wrapper{
+.wrapper{ /*Css'en till min class wrapper som är min container*/
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 5em auto auto 2em;
+    grid-template-rows: 50px 50px auto 30px;
+    width:90%;
+    height: 95%;
+    margin: 0 auto;
     grid-template-areas:
     "header" 
     "nav" 
     "main" 
     "footer" ;
 }
+#sida2 .wrapper{
+
+}
 header{
     grid-area: header;
+}
+h1{
+    height: 20vh;
+    font-size: 3em;
 }
 nav{
     grid-area: nav;
 }
-nav>ul{
+nav ul{
     display: grid;
-    grid-template-rows: auto;
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    float:right;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto;
+    text-align: center;
 }
 nav li{
     height: 100%;
@@ -38,7 +44,6 @@ nav a{
     margin:0;
 }
 nav a:hover {
-    text-align: center;
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
     display:inline-block;
@@ -60,6 +65,7 @@ section{
 }
 footer{
     grid-area:footer;
+    font-weight: 700;
 }
 .bild1{
     display:block;
@@ -70,38 +76,24 @@ footer{
 }
 .idrottshall{
     width: 40em
-    
-}
-@media screen and (min-width:800px){
-    body{
-        height:95vh;
-    }
-}
-.wrapper{
-    grid-template-rows: 50px 50px auto 30px;
-    width:90%;
-    height: 95%;
-    margin: 0 auto;
 }
 form{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: 500;
 }
 .formulär.html{
-    background-colour: ;
 }
-h1{
-    font-size: 3em;
-}
-h2{
-    font-size: 3em;
-}
-h3{
-    font-size: 3em;
-}
-h4{
-    font-size: 3em;
-}
-h5{
-    font-size: 3em;
+@media screen and (min-width:800px){
+    body{
+        height:95vh; 
+    }
+    nav ul{
+        display: grid;
+        grid-template-rows: auto;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        float:right;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
