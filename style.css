@@ -77,7 +77,19 @@ table,th,td{
     width: 25em;
 }
 .idrottshall{
-    width: 40em
+    width: 40em;
+}
+.Cristiano{
+    width: 6em;
+}
+.Messi{
+    width: 9em;
+}
+.Lebron{
+    width: 7em;
+}
+.McGregor{
+    width: 9em;
 }
 form{
     font-family:Georgia, 'Times New Roman', Times, serif;
