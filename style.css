@@ -11,9 +11,6 @@
     "main" 
     "footer" ;
 }
-#sida2 .wrapper{
-
-}
 header{
     grid-area: header;
 }
@@ -50,15 +47,15 @@ nav a:hover {
     padding: 1pc;
     margin:0;
 }
-main{
+#sida1 main{
     grid-area:main;
     display:grid;
     grid-template-rows: auto;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
 }   
-main section:nth-child(2){
+#sidaintkända main, #svidrottare main{
     display:grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 section{
     align-items: left;
