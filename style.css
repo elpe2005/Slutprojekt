@@ -11,26 +11,32 @@
     "main" 
     "footer" ;
 }
+
 header{
     grid-area: header;
 }
+
 h1{
-    height: 20vh;
-    font-size: 3em;
+    height: 5vh;
+    font-size: 2em;
 }
+
 nav{
     grid-area: nav;
 }
+
 nav ul{
     display: grid;
     grid-template-columns: auto;
     text-align: center;
 }
+
 nav li{
     height: 100%;
     list-style-type:none;
     text-align: right;
 }
+
 nav a{
     height:100%;
     width:100%;
@@ -43,64 +49,126 @@ nav a{
 nav a:hover {
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
-    display:inline-block;
     padding: 1pc;
     margin:0;
 }
+
 #sida1 main{
     grid-area:main;
     display:grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
 }   
+
 #sidaintkända main, #svidrottare main{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
+#sida3 main{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 section{
     align-items: left;
 }
+
 footer{
     grid-area:footer;
     font-weight: 700;
 }
+
 table,th,td{
-    border: 1px solid black;
+    border: 1px solid rgb(48, 7, 7);
     border-collapse: collapse;
-    background-color: bisque;
 }
+
+th:nth-child(1),th:nth-child(2),th:nth-child(3),th:nth-child(4){
+    background-color:antiquewhite;
+}
+
+td:nth-child(1),td:nth-child(3){
+    background-color:rgb(270, 180, 87);
+}
+
+td:nth-child(2),td:nth-child(4){
+    background-color:rgb(260, 200, 90);
+}
+
 .bild1{
     display:block;
     width: 25em;
 }
+
 .friidrott{
     width: 25em;
 }
+
 .idrottshall{
     width: 40em;
 }
+
 .Cristiano{
     width: 6em;
 }
+
 .Messi{
     width: 9em;
 }
+
 .Lebron{
     width: 7em;
 }
+
 .McGregor{
     width: 9em;
 }
+
+.Zlatan{
+    width: 5em;
+}
+
+.Sjöström{
+    width: 5em;
+}
+
+.Forsberg{
+    width: 7em;
+}
+
+.Borg{
+    width:5em;
+}
+
+.cricket{
+    width:40em;
+}
+
+.fotboll{
+    width:50em;
+}
+
+.innebandy{
+    width: 30em;
+}
+
+.handboll{
+    width: 30em;
+}
+
 form{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: 500;
 }
+
 .formulär.html{
 }
+
 @media screen and (min-width:800px){
     body{
         height:95vh;
-        background-color: blanchedalmond; 
+        background-color: bisque;
     }
     nav ul{
         display: grid;
