@@ -32,9 +32,12 @@ nav ul{
 }
 
 nav li{
-    height: 100%;
+    height: 18px;
     list-style-type:none;
     text-align: right;
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 4px;
 }
 
 nav a{
@@ -42,15 +45,17 @@ nav a{
     width:100%;
     display:inline-block;
     text-decoration: solid;
-    text-align: right;
-    padding:1pc;
+    text-align: center;
     margin:0;
 }
-nav a:hover {
+a:hover {
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
-    padding: 1pc;
     margin:0;
+}
+
+a{
+    color:rgb(134, 119, 35);
 }
 
 #sida1 main{
@@ -63,6 +68,12 @@ nav a:hover {
 #sidaintkända main, #svidrottare main{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+#svidrottare section, #sidaintkända section{
+    border: 3px solid black;
+    border-radius: 50px;
+    margin:20px;
 }
 
 #sida3 main{
@@ -155,6 +166,35 @@ td:nth-child(2),td:nth-child(4){
 
 .handboll{
     width: 30em;
+}
+
+.Ali{
+    width: 12em;
+    border-radius: 45px;
+}
+
+.Gretzky{
+    width: 11em;
+    border-radius: 45px;
+}
+ 
+.Bolt{
+    width:9em;
+    border-radius: 45px;
+}
+
+.Kalla{
+    width:10em;
+    border-radius: 45px;
+}
+
+.Lundqvist{
+    width: 18em;
+    border-radius: 45px;
+}
+
+.Gustafsson{
+    width: 15em;
 }
 
 form{
