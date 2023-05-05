@@ -81,10 +81,6 @@ a{
     grid-template-columns: 1fr 1fr;
 }
 
-section{
-    align-items: left;
-}
-
 footer{
     grid-area:footer;
     font-weight: 700;
@@ -100,11 +96,11 @@ th:nth-child(1),th:nth-child(2),th:nth-child(3),th:nth-child(4){
 }
 
 td:nth-child(1),td:nth-child(3){
-    background-color:rgb(270, 180, 87);
+    background-color:rgb(255, 180, 87);
 }
 
 td:nth-child(2),td:nth-child(4){
-    background-color:rgb(260, 200, 90);
+    background-color:rgb(255, 200, 90);
 }
 
 .bild1{
