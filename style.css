@@ -1,10 +1,10 @@
 .wrapper{ /*Css'en till min class wrapper som är min container*/
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50px 50px auto 30px;
+    display: grid; /*Här bestämmer jag att griden ska visas*/
+    grid-template-columns: 1fr; /*Hur många kolumner som ska finnas*/
+    grid-template-rows: 50px 50px auto 30px;  /*Hur mycket space var en av de då 4 raderna.*/
     width:90%;
     height: 95%;
-    margin: 0 auto;
+    margin: 0 auto; 
     grid-template-areas:
     "header" 
     "nav" 
@@ -12,26 +12,26 @@
     "footer" ;
 }
 
-header{
+header{ /*Här är css för mina headers och här är det bara för att bekräfta att header har header platsen i griden*/
     grid-area: header;
 }
 
-h1{
+h1{ /*specifikt hur hög <h1> ska vara och storleken av fonten*/
     height: 5vh;
     font-size: 2em;
 }
 
-nav{
+nav{ 
     grid-area: nav;
 }
 
-nav ul{
+nav ul{ /*css för min lista*/
     display: grid;
     grid-template-columns: auto;
     text-align: center;
 }
 
-nav li{
+nav li{ /*här är det mer specifikt för varje list element*/
     height: 18px;
     list-style-type:none;
     text-align: right;
@@ -40,7 +40,7 @@ nav li{
     padding: 4px;
 }
 
-nav a{
+nav a{ /*lite mer för list elementen*/
     height:100%;
     width:100%;
     display:inline-block;
@@ -48,32 +48,32 @@ nav a{
     text-align: center;
     margin:0;
 }
-a:hover {
+a:hover {  /*vad som händer om man hoverar list elementen*/
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
     margin:0;
 }
 
-a{
+a{ /*Vilken färg texten ska vara*/
     color:rgb(134, 119, 35);
 }
 
-#sida1 main{
+#sida1 main{ /*Här använder jag ett id för en sida för att göra specifikt css för den */
     grid-area:main;
     display:grid;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto; /*får automatiskt storleken*/
+    grid-template-columns: 1fr 1fr; /*två kolumner i main*/
 }   
 
-#sidaintkända main, #svidrottare main{
+#sidaintkända main, #svidrottare main{ /*specifikt för dem här två sidorna*/
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr; /*Dem ska ha tre kolumner i main*/ 
 }
 
-#svidrottare section, #sidaintkända section{
+#svidrottare section, #sidaintkända section{ /*En border runt sectionens på dem två sidorna*/
     border: 3px solid black;
-    border-radius: 50px;
-    margin:20px;
+    border-radius: 50px; /*Gör hörnen rundare*/
+    margin:20px; /*Lite mer mellanrum mellan text och andra sections*/
 }
 
 #sida3 main{
@@ -81,17 +81,17 @@ a{
     grid-template-columns: 1fr 1fr;
 }
 
-footer{
+footer{ /*här är min footers css*/
     grid-area:footer;
-    font-weight: 700;
+    font-weight: 700; /*hör texten lite mer "bold"*/
 }
 
-table,th,td{
+table,th,td{  /*Min table css */
     border: 1px solid rgb(48, 7, 7);
     border-collapse: collapse;
 }
 
-th:nth-child(1),th:nth-child(2),th:nth-child(3),th:nth-child(4){
+th:nth-child(1),th:nth-child(2),th:nth-child(3),th:nth-child(4){  /*mitt nth child som jag då gör zebra striping med i min table*/
     background-color:antiquewhite;
 }
 
@@ -103,7 +103,7 @@ td:nth-child(2),td:nth-child(4){
     background-color:rgb(255, 200, 90);
 }
 
-form {
+form { /*Css till min form*/
     background-color:rgb(255, 200, 90);
     padding: 20px;
     border-radius: 40px;
@@ -112,8 +112,13 @@ form {
     text-align: center;
 
   }
+
+.video { /*videon jag använder*/
+    width: 15em; 
+    border-radius: 2em;
+}
   
-.bild1{
+.bild1{ /*Alla dem här är bilder som jag gjort en klass för jag ville göra olika storleker på dem alla för att få in dem fint på websidan*/
     display:block;
     width: 25em;
 }
@@ -208,10 +213,7 @@ form{
     font-weight: 500;
 }
 
-.formulär.html{
-}
-
-@media screen and (min-width:800px){
+@media screen and (min-width:800px){ /*Här är min media query som då används för att se bättre ut på mobil och så då den anpassar sig för en dator och mobila enheter*/
     body{
         height:95vh;
         background-color: bisque;

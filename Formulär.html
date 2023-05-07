@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html lang="sv">
-    <head>
-        <meta Charset="utf-8">
-        <title> Formulär </title>
-        <link href="style.css" rel="stylesheet">
+<!DOCTYPE html> <!--Vilken html version som ska användas i detta fall HTML5-->
+<html lang="sv"> <!--Vilket språk det ska vara på-->
+    <head> <!--Headern kommer inte synas på webbsidan ut anger bara olika saker som titel och annat-->
+        <meta Charset="utf-8"> <!--Vilket bibliotek jag ska använda för alla olika symboler och sådant-->
+        <title> Formulär </title> <!--Titel-->
+        <link href="style.css" rel="stylesheet"> <!--Här länkar jag till css en jag använder-->
     </head>
-    <body id="formulär">
+    <body id="formulär"> <!--Här gör jag ett id till just denna sida för min container, och allt i body kommer synas på hemsidan.-->
         <div class="wrapper"> <!--Den här classen är min container med den kan jag ändra sidors design och använder den på varje sida-->
         <header>
-            <h1>Formulär</h1>
+            <h1>Formulär</h1> <!--text titel på sidan-->
         </header>
-        <nav>
+        <nav> <!--Det här är min nav, navigation där jag har min globala meny-->
             <ul>
                 <li><a href="index.html">Första sidan</a></li>
                 <li><a href="sida2.html">andra sidan</a></li>
@@ -19,12 +19,13 @@
         </nav>
 
 
-        <main>
-            <form method="post" action="Svarsidaform.html">
+        <main>  <!--I den här mainen har jag ett formulär-->
+            <form method="post" action="Svarsidaform.html"> <!--använder metoden post för att ska använda websidan på en server och har actionen Svarsidaform.html för att det är 
+            man ska skickas till när man sickar in dokumentet.-->
                 <br><h2>Välj din favorit sport/idrott!</h2> 
                 <p></p>
                 <label for="sport1">Fotboll</label>
-                <input type="radio" id="sport1" name="sport"><br><br>
+                <input type="radio" id="sport1" name="sport"><br><br> <!--har radio buttons-->
                 <label for="sport2">Innebandy</label>
                 <input type="radio" id="sport2" name="sport"><br><br>
                 <label for="sport3">Basket</label>
@@ -37,7 +38,7 @@
                 <input type="radio" id="sport6" name="sport"><br><br>
                 <p>Fanns inte din favorit sport här över?</p>
                 <p>skriven in den i rutan här under!</p>
-                <p>Du kan även skriva in här om du undrar något!</p>
+                <p>Du kan även skriva in här om du undrar något!</p> <!--Här har jag lite information och sen en "text" input där folket kan skriva-->
                 <input type="text">
                 <label for="submit"></label><br><br>
                 <input type="submit" id="submit" value="skicka">
