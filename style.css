@@ -3,7 +3,6 @@
     grid-template-columns: 1fr; /*Hur många kolumner som ska finnas*/
     grid-template-rows: 50px 50px auto 30px;  /*Hur mycket space var en av de då 4 raderna.*/
     width:90%;
-    height: 95%;
     margin: 0 auto; 
     grid-template-areas:
     "header" 
@@ -118,7 +117,7 @@ form { /*Css till min form*/
     border-radius: 2em;
 }
   
-.bild1{ /*Alla dem här är bilder som jag gjort en klass för jag ville göra olika storleker på dem alla för att få in dem fint på websidan*/
+.bild1{ /*Alla dem här är bilder som jag gjort en klass för jag ville göra olika storleker på dem alla för att få in dem fint på webbsidan*/
     display:block;
     width: 25em;
 }
@@ -216,7 +215,7 @@ form{
 @media screen and (min-width:800px){ /*Här är min media query som då används för att se bättre ut på mobil och så då den anpassar sig för en dator och mobila enheter*/
     body{
         height:95vh;
-        background-color: bisque;
+        background-color:#FFE4C4;
     }
     nav ul{
         display: grid;
