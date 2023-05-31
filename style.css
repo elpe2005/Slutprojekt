@@ -120,8 +120,10 @@ form { /*Css till min form*/
     max-width: 35em;
     margin: 0 auto;
     text-align: center;
-
   }
+textarea {
+    resize: none;
+}
 
 .video { /*videon jag använder*/
     width: 15em; 

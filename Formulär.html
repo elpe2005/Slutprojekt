@@ -25,7 +25,6 @@
             <form method="post" action="Svarsidaform.html"> <!--använder metoden post för att ska använda websidan på en server och har actionen Svarsidaform.html för att det är 
             man ska skickas till när man sickar in dokumentet.-->
                 <br><h2>Välj din favorit sport/idrott!</h2> 
-                <p></p>
                 <label for="sport1">Fotboll</label>
                 <input type="radio" id="sport1" value="radio" name="sport"><br><br> <!--har radio buttons-->
                 <label for="sport2">Innebandy</label>
@@ -38,11 +37,22 @@
                 <input type="radio" id="sport5" value="radio" name="sport"><br><br>
                 <label for="sport6">Höjdhopp</label>
                 <input type="radio" id="sport6" value="radio" name="sport"><br><br>
+                Välj en eller båda av dem här, här nedan:<br>
+                <label for="chbox1">glas</label>
+                <input type="checkbox" id="sport7" value="checkbox" name="chbox"><br>
+                eller<br>
+                <label for="chbox2">glass</label>
+                <input type="checkbox" id="sport 8" value="checkbox" name="chbox"><br><br>
+                Logga in!<br>
+                <label for="förnamn">Förnamn:</label>
+                <input type="text" id="namn" name="förnamn"><br><br>
+                <label for="lösenord">Lösenord:</label>
+                <input type="password" id="lösen" name="lösenord">
                 <p>Fanns inte din favorit sport här över?</p>
                 <p>skriven in den i rutan här under!</p>
                 <p>Du kan även skriva in här om du undrar något!</p> <!--Här har jag lite information och sen en "text" input där folket kan skriva-->
-                <input type="text" label="text" name="text">
-                <input type="submit" id="submit" value="skicka">
+                <textarea name=""></textarea>
+                <input type="submit" id="text" value="submit">
                 </form>
         </main>
         <footer>
