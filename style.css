@@ -47,12 +47,23 @@ nav a{ /*lite mer för list elementen*/
     text-align: center;
     margin:0;
 }
+a:link{
+    color:#e9e50c;
+}
+a:visited{
+    color:rgb(71, 16, 224);
+}
+a:focus{
+    color:aqua;
+}
 a:hover {  /*vad som händer om man hoverar list elementen*/
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
     margin:0;
 }
-
+a:active{
+    color:aquamarine;
+}
 a{ /*Vilken färg texten ska vara*/
     color:rgb(134, 119, 35);
 }
