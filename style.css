@@ -101,15 +101,15 @@ table,th,td{  /*Min table css */
     border-collapse: collapse;
 }
 
-th:nth-child(1),th:nth-child(2),th:nth-child(3),th:nth-child(4){  /*mitt nth child som jag då gör zebra striping med i min table*/
+th{  /*Det här th elementet är för att färga tabell bakgrunden*/
     background-color:antiquewhite;
 }
 
-td:nth-child(1),td:nth-child(3){
+td:nth-child(odd){  /*Det här är för att göra två sidor udda från dem andra*/
     background-color:rgb(255, 180, 87);
 }
 
-td:nth-child(2),td:nth-child(4){
+td:nth-child(even){ /*Den här är så att efter en udda sida kommer en even sida sen en udda och en even till*/
     background-color:rgb(255, 200, 90);
 }
 
